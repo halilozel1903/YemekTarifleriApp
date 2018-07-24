@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xYg-6P-CHC">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Yemek Tarifleri-->
+        <scene sceneID="QmQ-Ba-MNs">
+            <objects>
+                <tableViewController id="Zgr-rY-m3z" customClass="HeaderTableViewController" customModule="YemekTarifiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9d9-eJ-dfL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeaderCell" id="I3s-VD-1xD" customClass="HeaderTableViewCell" customModule="YemekTarifiApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I3s-VD-1xD" id="nKC-UO-EOc">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnP-G5-aEF">
+                                            <rect key="frame" x="23" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="mnP-G5-aEF" firstAttribute="centerY" secondItem="nKC-UO-EOc" secondAttribute="centerY" id="rIf-EH-Sir"/>
+                                        <constraint firstItem="mnP-G5-aEF" firstAttribute="leading" secondItem="nKC-UO-EOc" secondAttribute="leading" constant="23" id="sZX-WI-ijc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="headerText" destination="mnP-G5-aEF" id="Akj-FG-qCu"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Zgr-rY-m3z" id="YUM-Ck-bLp"/>
+                            <outlet property="delegate" destination="Zgr-rY-m3z" id="XmV-0K-xBO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Yemek Tarifleri" id="BtH-kF-bKF"/>
+                    <connections>
+                        <segue destination="w9c-QL-Fk9" kind="show" id="KV7-lo-GOt"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xst-HY-wz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="-55"/>
+        </scene>
+        <!--Read Recipe View Controller-->
+        <scene sceneID="5GY-xw-rfl">
+            <objects>
+                <viewController storyboardIdentifier="ReadRecipeStoryboardID" id="w9c-QL-Fk9" customClass="ReadRecipeViewController" customModule="YemekTarifiApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4lu-nJ-aZs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GDn-oy-UUD">
+                                <rect key="frame" x="0.0" y="722" width="375" height="56"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="AyX-BZ-x9m"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="owU-U0-bdQ">
+                                <rect key="frame" x="0.0" y="88" width="375" height="629"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReadRecipeImageCell" rowHeight="248" id="fOd-pr-Q92" customClass="ReadRecipeImageTableViewCell" customModule="YemekTarifiApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="248"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fOd-pr-Q92" id="g1i-m1-JhO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="247.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mercimekcorbasi" translatesAutoresizingMaskIntoConstraints="NO" id="129-mr-Aj1">
+                                                    <rect key="frame" x="0.0" y="11" width="375" height="237"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="129-mr-Aj1" secondAttribute="height" multiplier="125:79" id="skJ-cP-tCN"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="129-mr-Aj1" secondAttribute="bottom" constant="-0.33000000000000002" id="VuE-Yz-AaS"/>
+                                                <constraint firstAttribute="trailing" secondItem="129-mr-Aj1" secondAttribute="trailing" id="YCh-NE-KRP"/>
+                                                <constraint firstItem="129-mr-Aj1" firstAttribute="top" secondItem="g1i-m1-JhO" secondAttribute="top" constant="11" id="jI3-Ny-Hdf"/>
+                                                <constraint firstItem="129-mr-Aj1" firstAttribute="leading" secondItem="g1i-m1-JhO" secondAttribute="leading" id="pbk-8o-h5k"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="129-mr-Aj1" id="Xv5-Dn-h9I"/>
+                                            <outlet property="recipeImageView" destination="129-mr-Aj1" id="KEY-m0-d5g"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReadRecipeCell" rowHeight="204" id="ShG-91-7Y8" customClass="ReadRecipeTableViewCell" customModule="YemekTarifiApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="276" width="375" height="204"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ShG-91-7Y8" id="aJT-XI-6cS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="203.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="10I-0W-C8Z">
+                                                    <rect key="frame" x="0.0" y="11" width="375" height="193"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="10I-0W-C8Z" secondAttribute="bottom" constant="-0.33000000000000002" id="4VO-fa-e21"/>
+                                                <constraint firstItem="10I-0W-C8Z" firstAttribute="top" secondItem="aJT-XI-6cS" secondAttribute="top" constant="11" id="Zpw-3E-GRT"/>
+                                                <constraint firstItem="10I-0W-C8Z" firstAttribute="leading" secondItem="aJT-XI-6cS" secondAttribute="leading" id="jpT-8g-tgj"/>
+                                                <constraint firstAttribute="trailing" secondItem="10I-0W-C8Z" secondAttribute="trailing" id="wvI-R0-NCE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cookReadRecipe" destination="10I-0W-C8Z" id="vmH-pu-NPN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GDn-oy-UUD" firstAttribute="top" secondItem="owU-U0-bdQ" secondAttribute="bottom" constant="5" id="CvA-Ff-ipd"/>
+                            <constraint firstItem="owU-U0-bdQ" firstAttribute="trailing" secondItem="eiG-e5-81o" secondAttribute="trailing" id="TFf-fj-biH"/>
+                            <constraint firstItem="owU-U0-bdQ" firstAttribute="top" secondItem="eiG-e5-81o" secondAttribute="top" id="Xn2-ac-ITk"/>
+                            <constraint firstItem="GDn-oy-UUD" firstAttribute="trailing" secondItem="eiG-e5-81o" secondAttribute="trailing" id="cab-xE-bjQ"/>
+                            <constraint firstItem="GDn-oy-UUD" firstAttribute="leading" secondItem="eiG-e5-81o" secondAttribute="leading" id="egZ-VN-Qhb"/>
+                            <constraint firstItem="owU-U0-bdQ" firstAttribute="leading" secondItem="eiG-e5-81o" secondAttribute="leading" id="hnP-41-uVx"/>
+                            <constraint firstItem="GDn-oy-UUD" firstAttribute="bottom" secondItem="eiG-e5-81o" secondAttribute="bottom" id="p3Z-Ic-T52"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eiG-e5-81o"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="owU-U0-bdQ" id="Dy1-MI-Cuw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VsT-O8-Av0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829.60000000000002" y="-55.418719211822662"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K8X-fR-KfL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xYg-6P-CHC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n7O-yg-NFS">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Zgr-rY-m3z" kind="relationship" relationship="rootViewController" id="TQe-NH-bjw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s1f-1V-P6m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-879" y="-55"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mercimekcorbasi" width="620" height="410"/>
+    </resources>
+</document>
