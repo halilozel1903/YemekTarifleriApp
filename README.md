@@ -1,23 +1,24 @@
-# Yemek Tarifleri App
+# Recipes App
 
 ![Screenshot](yemek.jpg)
 
-## Projenin Amacı
+## The goal of the project
 
-Yemek Tarifleri Swift-4 ile geliştirilmiş bir iOS uygulamasıdır. Amaç kullanıcıya iOS uygulamalarda sıklıkla kullanılan
-Table View yapısının kullanımını göstermektir. Table View ile ilgili birçok metodu öğrenip sizlerde kendi projelerinizde
-bu yapıları kullanmanızı hedefliyorum.
+Recipes is an iOS application developed with Swift-4. The aim is to provide the user with the frequently used iOS applications.
+It is to demonstrate the use of the Table View structure. You can learn many methods about Table View and use it in your own projects.
+I aim to use these structures.
 
-## Projenin İçeriği
-Swift-4 ile geliştirilen bir iOS projedir. TableView, Navigation gibi bileşenlerin kullanımlarını öğreneceksiniz. <br>
+## Content of the Project
+It is an iOS project developed with Swift-4. You will learn how to use components such as TableView, Navigation. <br>
 
-## Projenin Ekran Görüntüleri
+## Screenshots of the Project
 
-### Table View'da bulunan liste elemanları
+### List elements found in Table View
 
 <img src="img1.png" width="200" />  
 
-### Listedeki elemanların içerikleri
+### Contents of the elements in the list
+
 <img src="img2.png" width="200" /> <img src="img3.png" width="200" /> <img src="img4.png" width="200" />
 
 <img src="img4.png" width="200" />  <img src="img5.png" width="200" /> <img src="img6.png" width="200" />
