@@ -1,4 +1,4 @@
-# Recipes App 👩🏻‍🍳
+# Recipes App 👩🏻‍🍳 🥘
 
 ![Screenshot](yemek.jpg)
 
