@@ -17,7 +17,7 @@ It is an iOS project developed with Swift-4. You will learn how to use component
 
 <img src="img1.png" width="200" />  
 
-### Contents of the elements in the list
+### Contents of the elements in the list 📄
 
 <img src="img2.png" width="200" /> <img src="img3.png" width="200" /> <img src="img4.png" width="200" />
 
