@@ -23,6 +23,12 @@ It is an iOS project developed with Swift-4. You will learn how to use component
 
 <img src="img4.png" width="200" />  <img src="img5.png" width="200" /> <img src="img6.png" width="200" />
 
+## Donation 💸 💰
+
+If this project help 💁 you to develop, you can give me a cup of coffee. ☕
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/halilozel1903)
+
 ## License  ℹ️
 ```
 MIT License
