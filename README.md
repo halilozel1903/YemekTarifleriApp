@@ -9,7 +9,7 @@ It is to demonstrate the use of the Table View structure. You can learn many met
 I aim to use these structures.
 
 ## Content of the Project 📚
-It is an iOS project developed with Swift-4. You will learn how to use components such as TableView, Navigation. <br>
+It is an iOS project developed with `Swift`. You will learn how to use components such as TableView, Navigation. <br>
 
 ## Screenshots of the Project 📱
 
