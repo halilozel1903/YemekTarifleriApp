@@ -4,7 +4,7 @@
 
 ## The goal of the project 👀
 
-Recipes is an iOS application developed with Swift-4. The aim is to provide the user with the frequently used iOS applications.
+Recipes is an iOS application developed with Swift. The aim is to provide the user with the frequently used iOS applications.
 It is to demonstrate the use of the Table View structure. You can learn many methods about Table View and use it in your own projects.
 I aim to use these structures.
 
